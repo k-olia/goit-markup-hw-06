@@ -311,8 +311,6 @@ button{
     /* Inside auto layout */
     transition: background-color var(--trans-dur-func);
   }
-
-
   .subscribe-btn:hover,
   .subscribe-btn:focus {
   background-color: var(--hover-btn);
@@ -851,6 +849,7 @@ color: rgba(117, 117, 117, 0.5);
 }
 .modal-form-message:focus {
   border-color: var(--logo-color);
+  display: block;
 }
 .modal-form-check:checked + .modal-form-check-desc::before{
   background-color: var(--hover-btn);
