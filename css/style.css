@@ -217,8 +217,6 @@ button{
 }
 .footer-social {
   margin-left: 120px;
-  width: 208px;
-  height: 80px;
 }
 .footer-social-header {
   font-weight: 500;
@@ -255,7 +253,7 @@ button{
 }
 
 .footer-subscribe {
-  margin-left: 120px;
+  margin-left: 80px;
 }
 .footer-subscribe-header {
   font-weight: 500;
@@ -630,7 +628,7 @@ button{
 }
 .filter-list-item-btn:hover,
 .filter-list-item-btn:focus {
-  border: 0;
+  border-color: transparent ;
   color: var(--main-background);
   background-color: var(--hover-btn);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
@@ -653,12 +651,10 @@ button{
   display: inline-block;
   border: 1px solid var(--footer-text-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
-  transition: box-shadow var(--trans-dur-func), 
-  border var(--trans-dur-func);
+  transition: box-shadow var(--trans-dur-func);
 }
 .projects-card:hover,
 .projects-card:focus {
-  border: 0.5px solid var(--footer-link-color),
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -820,6 +816,8 @@ transition: border-color var(--trans-dur-func);
   top: 50%;
   left: 19px;
   transform: translate(0, -50%);
+  width: 18px;
+  height: 24px;
 
 }
 .modal-form-input:focus +.modal-form-icon {
@@ -886,7 +884,6 @@ display: flex;
   margin-left: 1px;
   color: var(--logo-color);
   text-decoration-line: underline;
-  margin-bottom: 24px;
 }
 
 .modal-form-submit {
@@ -895,6 +892,7 @@ display: flex;
   padding: 16px 32px;
   min-width: 169px;
   margin: auto;
+  margin-top: 24px;
 
   font-weight: 500;
   font-size: 16px;
@@ -904,4 +902,9 @@ display: flex;
   border-style: none;
   /* Inside auto layout */
   transition: background-color var(--trans-dur-func);
+}
+.modal-form-submit:hover, 
+.modal-form-submit:focus {
+  background-color: var(--hover-btn);
+
 }
